@@ -1,7 +1,6 @@
 import React from "react";
 import AnimatedPage from "../components/Animate";
-import Timeline from "../components/Timeline"; // Import Timeline component
-
+import Timeline from "../components/Timeline"; 
 const Home = () => {
   return (
     <AnimatedPage>
