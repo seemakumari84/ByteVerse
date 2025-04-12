@@ -186,15 +186,10 @@ const Home = () => {
     <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
   </ul>
 </section>
-
+<Footer/>
       </div>
-
-      {/* Footer */}
-      <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
-        <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
-        <p>Total Visits: [Visit Counter Here]</p>
-      </footer>
-    </div>
+</AnimatedPage>
+    
   );
 };
 
