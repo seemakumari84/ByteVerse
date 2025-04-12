@@ -36,20 +36,53 @@ const Home = () => {
         </ul>
       </section>
 
-      {/* Subjects */}
-      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📘 Subjects Covered</h2>
-        <ul className="list-disc pl-6 text-gray-700 space-y-2">
-          <li>Electromagnetic Field Theory</li>
-          <li>Microprocessor & Microcontroller</li>
-          <li>Digital Signal Processing</li>
-          <li>Object Oriented Programming</li>
-          <li>Seminar and Report Writing</li>
-          <li>Optimization Techniques</li>
-          <li>Wireless Sensor Network</li>
-          <li>Digital IC Design</li>
-        </ul>
-      </section>
+  {/* Subjects */}
+<section className="bg-white rounded-xl shadow-md p-6 mb-10">
+  <h2 className="text-2xl font-semibold text-purple-700 mb-4">📘 Subjects Covered</h2>
+  <ul className="list-disc pl-6 text-gray-700 space-y-2">
+    <li>
+      <a href="https://www.youtube.com/watch?v=BQ5JYL0BFtk&list=PLxlldU21bDqMaZghkk1OxO62MKSHkzPU7" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Electromagnetic Field Theory
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=jte2S2iWRMI&list=PLBlnK6fEyqRgyFCCgqdcBowmSp_BTKs4F" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Microprocessor & Microcontroller
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=cIH5o7wYNzs&list=PLXOYj6DUOGrpVb7_cCB1pZuGH4BFlp61B" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Digital Signal Processing
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=mlIUKyZIUUU" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Object Oriented Programming
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=S-NKq89bNkk" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Seminar and Report Writing
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/playlist?list=PLvfKBrFuxD065AT7q1Z0rDAj9kBnPnL0l" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Optimization Techniques
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=BBvG7uzmOV0" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Wireless Sensor Network
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=g6CCJAbdkK8&list=PLHO2NKv71TvsSqYwVvUCZwNkY-jUyUHdS" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+        Digital IC Design
+      </a>
+    </li>
+  </ul>
+</section>
+
 
       {/* YouTube Classes */}
       <section className="bg-white rounded-xl shadow-md p-6 mb-10">
@@ -82,40 +115,16 @@ const Home = () => {
         </ul>
       </section>
 
-      
-{/* Syllabus Section */}
-<section className="bg-white rounded-xl shadow-md p-6 mb-10">
-  <h2 className="text-2xl font-semibold text-purple-700 mb-4">📝 Syllabus</h2>
-
-  {/* Choose your subject */}
-  <div className="mb-4">
-    <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
-      Choose your subject:
-    </label>
-    <select
-      id="subject"
-      className="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
-    >
-      <option value="">-- Select a Subject --</option>
-      <option value="emft">Electromagnetic Field Theory</option>
-      <option value="opt">Optimization Techniques</option>
-      <option value="wsn">Wireless Sensor Network</option>
-      <option value="dic">Digital IC Design</option>
-      <option value="oop">Object Oriented Programming</option>
-      <option value="dsp">Digital Signal Processing</option>
-      <option value="mpmc">Microprocessor and Microcontroller</option>
-      <option value="sem">Seminar and Report Writing</option>
-    </select>
-  </div>
-
-  {/* Topics Covered - Placeholder */}
-  <div className="mt-6">
-    <h3 className="text-lg font-semibold text-blue-700 mb-2">📖 Topics Covered</h3>
-    <p className="text-gray-600">
-      Please select a subject above to view the syllabus topics. (Dynamic content coming soon!)
-    </p>
-  </div>
-</section> {/* Important Dates */}
+      {/* Contact Info */}
+      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
+        <ul className="text-gray-700 space-y-1 pl-6 list-disc">
+          <li>Email: nauser522@gmail.com</li>
+          <li>Phone: 8603410057</li>
+          <li>Career Support: career@studymasalaa.com</li>
+        </ul>
+      </section>
+ {/* Important Dates */}
         <section className="bg-white rounded-xl shadow-md p-6 mb-10">
           <h2 className="text-2xl font-semibold text-purple-700 mb-4">📅 Important Dates</h2>
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
@@ -162,33 +171,20 @@ const Home = () => {
             </p>
           </div>
         </section>
-
         {/* Footer */}
         <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
         </footer>{/* Fun Facts */}
-<section className="bg-white rounded-xl shadow-md p-6 mb-10">
-  <h2 className="text-2xl font-semibold text-purple-700 mb-4">🧠 Fun & Inspiring Facts</h2>
-  <ul className="list-disc pl-6 text-gray-700 space-y-2">
-    <li>The word “student” comes from the Latin word *studere*, meaning “to be eager.”</li>
-    <li>Neurons in your brain create new connections every time you learn something new.</li>
-    <li>Studying in short bursts of 25 minutes (Pomodoro Technique) boosts memory!</li>
-    <li>Dr. APJ Abdul Kalam used to study under streetlights due to lack of electricity in childhood.</li>
-    <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
-  </ul>
-</section>{/* Contact Info */}
 
-{/* Contact Info */}
-      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
-        <ul className="text-gray-700 space-y-1 pl-6 list-disc">
-          <li>Email: nauser522@gmail.com</li>
-          <li>Phone: 8603410057</li>
-          <li>Career Support: career@studymasalaa.com</li>
-        </ul>
-      </section>
+
+
+      
       </div>
 
-
+      {/* Footer */}
+      <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
+        <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
+        <p>Total Visits: [Visit Counter Here]</p>
+      </footer>
     </AnimatedPage>
   );
 };
