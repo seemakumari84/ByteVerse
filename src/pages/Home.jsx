@@ -176,6 +176,8 @@ const Home = () => {
     <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
   </ul>
 </section>{/* Contact Info */}
+
+{/* Contact Info */}
       <section className="bg-white rounded-xl shadow-md p-6 mb-10">
         <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
         <ul className="text-gray-700 space-y-1 pl-6 list-disc">
