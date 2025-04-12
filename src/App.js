@@ -10,6 +10,7 @@ import Courses from './pages/Courses';
 import SubmitNotes from './pages/SubmitNotes';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
+import MenuBar from './components/Menubar';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);

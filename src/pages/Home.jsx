@@ -1,4 +1,6 @@
 import React from "react";
+import MenuBar from "../components/Menubar";
+import Footer from "../components/footer";
 const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50 px-4 py-10 md:px-20 font-sans">
@@ -10,7 +12,7 @@ const Home = () => {
           Breaking Barriers, Building CGPA
         </p>
       </header>
-
+<MenuBar/>
       {/* Class Contents */}
       <section className="bg-white rounded-xl shadow-md p-6 mb-10">
         <h2 className="text-2xl font-semibold text-purple-700 mb-4">📚 Class Contents</h2>
@@ -126,7 +128,7 @@ const Home = () => {
       <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
         <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
         <p>Total Visits: [Visit Counter Here]</p>
-      </footer>
+      </footer><Footer/>
     </div>
   );
 };
