@@ -1,7 +1,6 @@
 import React from "react";
 import AnimatedPage from "../components/Animate";
 import Timeline from "../components/Timeline"; 
-import Footer from "../components/footer"
 const Home = () => {
   return (
     <AnimatedPage>
@@ -83,15 +82,7 @@ const Home = () => {
         </ul>
       </section>
 
-      {/* Contact Info */}
-      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
-        <ul className="text-gray-700 space-y-1 pl-6 list-disc">
-          <li>Email: nauser522@gmail.com</li>
-          <li>Phone: 8603410057</li>
-          <li>Career Support: career@studymasalaa.com</li>
-        </ul>
-      </section>
+      
 {/* Syllabus Section */}
 <section className="bg-white rounded-xl shadow-md p-6 mb-10">
   <h2 className="text-2xl font-semibold text-purple-700 mb-4">📝 Syllabus</h2>
@@ -184,8 +175,15 @@ const Home = () => {
     <li>Dr. APJ Abdul Kalam used to study under streetlights due to lack of electricity in childhood.</li>
     <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
   </ul>
-</section>
-<Footer/>
+</section>{/* Contact Info */}
+      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
+        <ul className="text-gray-700 space-y-1 pl-6 list-disc">
+          <li>Email: nauser522@gmail.com</li>
+          <li>Phone: 8603410057</li>
+          <li>Career Support: career@studymasalaa.com</li>
+        </ul>
+      </section>
       </div>
 
 
