@@ -84,15 +84,7 @@ const Home = () => {
         </ul>
       </section>
 
-      {/* Contact Info */}
-      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
-        <ul className="text-gray-700 space-y-1 pl-6 list-disc">
-          <li>Email: nauser522@gmail.com</li>
-          <li>Phone: 8603410057</li>
-          <li>Career Support: career@studymasalaa.com</li>
-        </ul>
-      </section>
+      
 {/* Syllabus Section */}
 <section className="bg-white rounded-xl shadow-md p-6 mb-10">
   <h2 className="text-2xl font-semibold text-purple-700 mb-4">📝 Syllabus</h2>
@@ -187,6 +179,15 @@ const Home = () => {
   </ul>
 </section>
 
+{/* Contact Info */}
+      <section className="bg-white rounded-xl shadow-md p-6 mb-10">
+        <h2 className="text-2xl font-semibold text-purple-700 mb-4">📬 Contact Info</h2>
+        <ul className="text-gray-700 space-y-1 pl-6 list-disc">
+          <li>Email: nauser522@gmail.com</li>
+          <li>Phone: 8603410057</li>
+          <li>Career Support: career@studymasalaa.com</li>
+        </ul>
+      </section>
       </div>
 
 
