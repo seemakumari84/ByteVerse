@@ -174,9 +174,18 @@ const Home = () => {
 
         {/* Footer */}
         <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
-          <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
-          <p>Total Visits: [Visit Counter Here]</p>
-        </footer>
+        </footer>{/* Fun Facts */}
+<section className="bg-white rounded-xl shadow-md p-6 mb-10">
+  <h2 className="text-2xl font-semibold text-purple-700 mb-4">🧠 Fun & Inspiring Facts</h2>
+  <ul className="list-disc pl-6 text-gray-700 space-y-2">
+    <li>The word “student” comes from the Latin word *studere*, meaning “to be eager.”</li>
+    <li>Neurons in your brain create new connections every time you learn something new.</li>
+    <li>Studying in short bursts of 25 minutes (Pomodoro Technique) boosts memory!</li>
+    <li>Dr. APJ Abdul Kalam used to study under streetlights due to lack of electricity in childhood.</li>
+    <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
+  </ul>
+</section>
+
       </div>
 
       {/* Footer */}
