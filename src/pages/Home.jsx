@@ -1,7 +1,7 @@
 import React from "react";
 import AnimatedPage from "../components/Animate";
 import Timeline from "../components/Timeline"; 
-import Footer from "../components/footer"
+import MenuBar from "../components/MenuBar";
 const Home = () => {
   return (
     <AnimatedPage>
@@ -14,6 +14,7 @@ const Home = () => {
           Breaking Barriers, Building CGPA
         </p>
       </header>
+      <MenuBar/>
 
       {/* Class Contents */}
       <section className="bg-white rounded-xl shadow-md p-6 mb-10">
@@ -185,7 +186,7 @@ const Home = () => {
     <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
   </ul>
 </section>
-<Footer/>
+
       </div>
 
 

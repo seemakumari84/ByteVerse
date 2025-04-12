@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/footer"
+
 const courseData = [
   // Original Courses
   {
@@ -117,7 +117,7 @@ const Courses = () => {
             </a>
           ))}
         </div>
-      </div><Footer/>
+      </div>
     </div>
   );
 };
