@@ -1,6 +1,5 @@
 import React from "react";
 import AnimatedPage from "../components/Animate";
-import Timeline from "../components/Timeline"; 
 import MenuBar from "../components/MenuBar";
 const Home = () => {
   return (
@@ -8,7 +7,7 @@ const Home = () => {
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50 px-4 py-10 md:px-20 font-sans">
       <header className="text-center mb-12">
         <h1 className="text-5xl font-extrabold text-blue-800 mb-3 drop-shadow-sm">
-          Welcome to <span className="text-purple-600">StudyMasalaa</span> 🚀
+          Welcome to <span className="text-purple-600">SmartShiksha</span> 🚀
         </h1>
         <p className="text-xl text-gray-600 font-medium">
           Breaking Barriers, Building CGPA
@@ -130,7 +129,6 @@ const Home = () => {
         {/* Timeline Section */}
         <section className="bg-white rounded-xl shadow-md p-6 mb-10">
           <h2 className="text-2xl font-semibold text-purple-700 mb-4">📅 Semester Timeline</h2>
-          <Timeline /> {/* Add the Timeline component here */}
         </section>
 
         {/* Syllabus Section */}
@@ -185,7 +183,7 @@ const Home = () => {
         <ul className="text-gray-700 space-y-1 pl-6 list-disc">
           <li>Email: nauser522@gmail.com</li>
           <li>Phone: 8603410057</li>
-          <li>Career Support: career@studymasalaa.com</li>
+          <li>Career Support: career@smartshiksha.com</li>
         </ul>
       </section>
       </div>

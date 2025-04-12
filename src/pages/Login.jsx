@@ -30,7 +30,7 @@ const Login = ({ onLogin }) => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 to-purple-300">
       <div className="bg-white p-10 rounded-2xl shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center text-blue-600">
-          Welcome to StudyMasalaa
+          Welcome to SmartShiksha
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
