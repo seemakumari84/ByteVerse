@@ -1,6 +1,7 @@
 import React from "react";
 import AnimatedPage from "../components/Animate";
 import Timeline from "../components/Timeline"; 
+import Footer from "../components/footer"
 const Home = () => {
   return (
     <AnimatedPage>
@@ -184,7 +185,7 @@ const Home = () => {
     <li>Elon Musk read 10 hours a day as a child — now he builds rockets!</li>
   </ul>
 </section>
-
+<Footer/>
       </div>
 
 
