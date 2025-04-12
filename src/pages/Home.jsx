@@ -1,6 +1,10 @@
 import React from "react";
+import AnimatedPage from "../components/Animate";
+import Timeline from "../components/Timeline"; // Import Timeline component
+
 const Home = () => {
   return (
+    <AnimatedPage>
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-50 px-4 py-10 md:px-20 font-sans">
       <header className="text-center mb-12">
         <h1 className="text-5xl font-extrabold text-blue-800 mb-3 drop-shadow-sm">
@@ -120,14 +124,67 @@ const Home = () => {
       Please select a subject above to view the syllabus topics. (Dynamic content coming soon!)
     </p>
   </div>
-</section>
+</section> {/* Important Dates */}
+        <section className="bg-white rounded-xl shadow-md p-6 mb-10">
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4">📅 Important Dates</h2>
+          <ul className="list-disc pl-6 text-gray-700 space-y-2">
+            <li>Start of Semester: 8 January 2024</li>
+            <li>Mid Semester Exams: 11–22 March 2024</li>
+            <li>End Semester Exams: 7–21 May 2024</li>
+          </ul>
+        </section>
+
+        {/* Timeline Section */}
+        <section className="bg-white rounded-xl shadow-md p-6 mb-10">
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4">📅 Semester Timeline</h2>
+          <Timeline /> {/* Add the Timeline component here */}
+        </section>
+
+        {/* Syllabus Section */}
+        <section className="bg-white rounded-xl shadow-md p-6 mb-10">
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4">📝 Syllabus</h2>
+          <div className="mb-4">
+            <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
+              Choose your subject:
+            </label>
+            <select
+              id="subject"
+              className="w-full border border-gray-300 rounded-lg px-4 py-2 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <option value="">-- Select a Subject --</option>
+              <option value="emft">Electromagnetic Field Theory</option>
+              <option value="opt">Optimization Techniques</option>
+              <option value="wsn">Wireless Sensor Network</option>
+              <option value="dic">Digital IC Design</option>
+              <option value="oop">Object Oriented Programming</option>
+              <option value="dsp">Digital Signal Processing</option>
+              <option value="mpmc">Microprocessor and Microcontroller</option>
+              <option value="sem">Seminar and Report Writing</option>
+            </select>
+          </div>
+
+          {/* Topics Covered - Placeholder */}
+          <div className="mt-6">
+            <h3 className="text-lg font-semibold text-blue-700 mb-2">📖 Topics Covered</h3>
+            <p className="text-gray-600">
+              Please select a subject above to view the syllabus topics. (Dynamic content coming soon!)
+            </p>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
+          <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
+          <p>Total Visits: [Visit Counter Here]</p>
+        </footer>
+      </div>
 
       {/* Footer */}
       <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
         <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
         <p>Total Visits: [Visit Counter Here]</p>
       </footer>
-    </div>
+    </AnimatedPage>
   );
 };
 
