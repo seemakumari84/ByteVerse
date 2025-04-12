@@ -187,11 +187,7 @@ const Home = () => {
 
       </div>
 
-      {/* Footer */}
-      <footer className="text-center mt-16 text-gray-600 text-sm border-t pt-6">
-        <p>&copy; 2025 StudyMasalaa.com. All rights reserved.</p>
-        <p>Total Visits: [Visit Counter Here]</p>
-      </footer>
+
     </AnimatedPage>
   );
 };
