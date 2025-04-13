@@ -59,6 +59,25 @@ const Login = ({ onLogin }) => {
       setLoading(false);
     }
   };
+{/* Simple Success Popup */}
+{showPopup && (
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+    <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+      <h3 className="text-xl font-semibold text-green-500 mb-4">
+        Successfully Signed Up!
+      </h3>
+      <button
+        onClick={() => {
+          setShowPopup(false);
+          setIsSignup(false);  // Optionally, switch to login view after signup
+        }}
+        className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
+      >
+        OK
+      </button>
+    </div>
+  </div>
+)}
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 to-purple-300">
