@@ -1,7 +1,8 @@
-// src/App.js
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Login from "./pages/Login";
+import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom'; // Remove Router
+import { useAuth } from './contexts/authContext/ind'; // Import the AuthContext hook
+import Login from './components/auth/login'; // Import the Login component
+import Register from './components/auth/register'; // Import the Login component
 import Notes from './pages/Notes';
 import PYQs from './pages/PYQs';
 import Labs from './pages/Labs';
@@ -9,14 +10,25 @@ import Courses from './pages/Courses';
 import SubmitNotes from './pages/SubmitNotes';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
-import Quiz from './components/Quiz'; // ✅ Make sure this exists
+import Quiz from './components/Quiz';
+import { AuthProvider } from './contexts/authContext/ind'; // Wrap App with AuthProvider
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const { userLoggedIn, currentUser } = useAuth(); // Get login status from context
+  const [isLoggedIn, setIsLoggedIn] = useState(userLoggedIn);
+
+  // Update login status on state change
+  useEffect(() => {
+    if (currentUser) {
+      setIsLoggedIn(true);
+    } else {
+      setIsLoggedIn(false);
+    }
+  }, [currentUser]);
 
   return (
-    <Router>
-      {/* {isLoggedIn ? ( */}
+    <AuthProvider>
+      {isLoggedIn ? (
         <>
           <Navbar />
           <Routes>
@@ -26,13 +38,16 @@ function App() {
             <Route path="/labs" element={<Labs />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/submit-notes" element={<SubmitNotes />} />
-            <Route path="/quiz" element={<Quiz />} /> {/* ✅ FIXED: moved inside Routes */}
+            <Route path="/quiz" element={<Quiz />} />
           </Routes>
         </>
-      {/* ) : (
-        <Login onLogin={() => setIsLoggedIn(true)} />
-      )} */}
-    </Router>
+      ) : (
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      )}
+    </AuthProvider>
   );
 }
 
