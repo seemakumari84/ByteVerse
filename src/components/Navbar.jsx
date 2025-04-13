@@ -1,16 +1,34 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// Make sure the path is correct
 
 const Navbar = () => (
-  <nav className="bg-blue-700 text-white p-4 flex justify-between">
-    <h1 className="text-xl font-bold">StudyMasalaa Clone</h1>
-    <div className="space-x-4">
-      <Link to="/" className="hover:underline">Home</Link>
-      <Link to="/notes" className="hover:underline">Notes</Link>
-      <Link to="/pyqs" className="hover:underline">PYQs</Link>
-      <Link to="/labs" className="hover:underline">Lab Files</Link>
-      <Link to="/courses" className="hover:underline">Courses</Link>
-      <Link to="/submit" className="hover:underline">Submit Notes</Link>
+  <nav className="bg-[#2d6a4f] dark:bg-gray-900 text-white px-6 py-4 shadow-md flex justify-between items-center">
+    <h1 className="text-2xl font-semibold tracking-wide">StudyMasalaa</h1>
+
+    <div className="flex items-center space-x-4">
+      {[
+        { path: "/", label: "Home" },
+        { path: "/notes", label: "Notes" },
+        { path: "/pyqs", label: "PYQs" },
+        { path: "/labs", label: "Lab Files" },
+        { path: "/courses", label: "Courses" },
+        { path: "/submit", label: "Submit Notes" },
+      ].map((item, idx) => (
+        <Link
+          key={idx}
+          to={item.path}
+          className="px-4 py-2 rounded-md hover:bg-[#1b4332] dark:hover:bg-gray-800 transition duration-200"
+        >
+          {item.label}
+        </Link>
+      ))}
+<Link to="/quiz" className="px-4 py-2 rounded-md hover:bg-[#1b4332] transition duration-200">
+  Quiz
+</Link>
+
+      {/* Theme Toggle Button */}
+    
     </div>
   </nav>
 );
