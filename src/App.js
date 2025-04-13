@@ -33,7 +33,7 @@ function App() {
         <Login onLogin={() => setIsLoggedIn(true)} />
       )} */}
     </Router>
-);
+  );
 }
 
 export default App;
