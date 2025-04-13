@@ -84,6 +84,8 @@ const Login = ({ onLogin }) => {
       <div className="bg-white p-10 rounded-2xl shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold mb-6 text-center text-blue-600">
           {isSignup ? "Sign Up to SmartShiksha" : "Login to SmartShiksha"}
+
+          Welcome to SmartShiksha
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
